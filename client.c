@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/31 11:37:12 by ptungbun          #+#    #+#             */
-/*   Updated: 2023/04/09 15:12:52 by marvin           ###   ########.fr       */
+/*   Updated: 2023/04/09 15:58:41 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static void	sendsignal(int s_pid, char *str)
 				kill(s_pid, SIGUSR2);
 			str[i] = str[i] >> 1;
 			n_bit++;
-			usleep(100);
+			usleep(600);
 		}
 		i++;
 	}
